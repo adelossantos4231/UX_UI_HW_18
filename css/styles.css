@@ -1,0 +1,141 @@
+body {
+    background-color: #EFEEEB;
+}
+.heroImg {
+    background-image: url(../images/projectsimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 650px;
+    width: 100%;
+}
+.hero {
+    display: flex;
+    height: 650px;
+    justify-content: center;
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 108px;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flexChildren {
+    display: flex;
+    width: 33%;
+}
+.topNav {
+    display: flex;
+    justify-content: left;
+    width: 95%;
+    align-items: center;
+}
+.button {
+    display: flex;
+    height: 56px;
+    width: 219px;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color: #607CB5;
+    color: #EFEEEB;
+    border-style: none;
+    padding-right: 10px;
+    cursor: pointer;
+}
+li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    height: 56px;
+    font-size: 24px;
+    text-align: left;
+}
+.myWork {
+    display: grid;
+    height: 460px;
+    background-color: #F48C36;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+    "leftImg rightUp"
+    "leftImg rightCenter"
+    "leftImg rightBottom";
+}
+.myWork1 {
+    display: grid;
+    height: 460px;
+    background-color: #557A29;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+    "leftImg rightUp"
+    "leftImg rightCenter"
+    "leftImg rightBottom";
+}
+.leftImage {
+    grid-area: leftImg;
+}
+.rightUp {
+    grid-area: rightUp;
+}
+.rightCenter {
+    grid-area: rightCenter;
+}
+.rightBottom {
+    grid-area: rightBottom;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+    }
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .flexChildren {
+        display: flex;
+        width: 100%;
+    }
+    .myWork {
+        display: grid;
+        height: 460px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+         grid-template-areas: 
+        "leftImg"
+        "rightUp" 
+        "rightCenter"
+        "rightBottom";
+    }
+
+    .myWork1 {
+        padding: 5%;
+        display: grid;
+        height: 460px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+         grid-template-areas: 
+        "leftImg"
+        "rightUp" 
+        "rightCenter"
+        "rightBottom";
+    }
+    p {
+        display: flex;
+        flex-direction: column; 
+    }
+}
